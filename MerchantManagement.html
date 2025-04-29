@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merchant Management</title>
+        <link rel="stylesheet" href="asstes/css/MerchantManagement.css">
+        <link rel="stylesheet" href="asstes/css/bootstrap.css">
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+
+</head>
+
+<body>
+        <!--  start-->
+        <div class="main-container">
+                <!-- admin header -->
+                <div class="p-1 header ">
+                        <div class="d-flex flex-wrap justify-content-between w-100">
+                                <h2 class="text-white d-flex">
+                                        <b>Timp</b>
+                                </h2>
+                                <img src="asstes/img/man.jpg" alt="" class="rounded-circle profile-img d-flex">
+                        </div>
+                </div>
+                <!--  end-->
+                <!-- start  Admin sidebar  -->
+                <div class="d-flex flex-wrap">
+                        <div class="admin-sidebar">
+                                <div class="d-flex flex-wrap  w-100">
+                                        <ul class=" p-2 align-items-center text-white">
+                                                <li class="d-flex p-1 m-0 align-items-center sidebar-active"><i
+                                                                class="p-2 fas fa-home"></i><a href="index.html"
+                                                                class="p-2">Dashboard</a>
+                                                </li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-users"></i><a
+                                                                href="UserManagement.html" class="p-2">User
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-hotel"></i><a href="#"
+                                                                class="p-2">Merchant
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center"><i
+                                                                class="p-2 fas fa-star"></i><a href="RatingReview.html"
+                                                                class="p-2">Rating and
+                                                                Review</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-handshake"></i><a href="DealManagement.html"
+                                                                class="p-2">Deal
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-hand-holding-usd"></i><a href="SubscriptionPlan.html"
+                                                                class="p-2">Subscription Plan</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-user"></i><a href="AdvertisementPackage.html"
+                                                                class="p-2">Advertisement
+                                                                Banner</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-bullhorn"></i><a href="PromotionalBanner.html"
+                                                                class="p-2">Promotional
+                                                                Banner</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-flag"></i><a href="RedFlagContent.html" class="p-2">Red
+                                                                Flag
+                                                                Content</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-sync-alt"></i><a href="TransactionManagement.html"
+                                                                class="p-2">Transaction
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-tools"></i><a href="MaintenceAndUpdates.html"
+                                                                class="p-2">Maintenance
+                                                                and
+                                                                Update</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-headset"></i><a href="/HelpSupport.html"
+                                                                class="p-2">Help &
+                                                                Support</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-edit"></i><a href="ContentManagement.html"
+                                                                class="p-2">Content
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-sign-out-alt"></i><a href="Logout.html"
+                                                                class="p-2">Logout</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <!-- end -->
+
+                        <!-- start -->
+                        <div class="admin-content py-4 px-4">
+                                <div class="d-flex flex-wrap col-md-12 py-2 px-2 ">
+                                        <div class="col-md-10">
+                                                <!-- <a href="" class="" > -->
+                                                        <button class="btn-merchant" onclick="new_merchant()">New Merchant
+                                                                Registration Details</button>
+                                                        <!-- </a> -->
+                        
+                                                <!-- <a href="" class="" > -->
+                                                        <button class="btn-merch-management " onclick="merchant_management()">Merchants
+                                                                Management</button>
+                                                        <!-- </a> -->
+                        
+                                        </div>
+                                        <div class="col-md-2 border-0 d-flex justify-content-end">
+                                                <a href="" class=""><button class="add-btn-merchant  ">Add
+                                                                Merchant</button></a>
+                                        </div>
+                                </div>
+                        
+                                <!-- admin merchant details -->
+                                <div class="new-merchant py-4 px-4 w-100">
+                                        <div class=" row">
+                                                <div class="py-2 px-2 rounded border">
+                                                        <div class="py-3 px-3 d-flex ">
+                                                                <h5 class="col-md-8 ">New Merchant Registration Details
+                                                                </h5>
+                                                                <div class="col-md-4 d-flex gap-3 justify-content-end">
+                                                                        <input type="text" name="" id=""
+                                                                                placeholder="Search"
+                                                                                class="bg-light border p-2 position-relative">
+                                                                        <i class="fas fa-search search-icon  "></i>
+                                                                        <i
+                                                                                class="fas fa-filter p-2 filter-icon text-white"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="px-4 py-4">
+                                                                <div class="table-responsive">
+                                                                        <table class="table table-hover common_table">
+                                                                                <thead>
+                                                                                        <tr class="text-center">
+                                                                                                <th>S.NO</th>
+                                                                                                <th>NAME</th>
+                                                                                                <th>EMAIL</th>
+                                                                                                <th>MOBILE NO.</th>
+                                                                                                <th>ACTION</th>
+                                                                                        </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                        <tr class="text-center">
+                                                                                                <td>1</td>
+                                                                                                <td>shubham</td>
+                                                                                                <td>Harshsaini@gmail.com
+                                                                                                </td>
+                                                                                                <td>1234567890</td>
+                                                                                                <td>
+                                                                                                        <div
+                                                                                                                class="d-flex align-items-center gap-1 justify-content-center">
+                                                                                                                <a href=""
+                                                                                                                        class="common_button">
+                                                                                                                        <button type="button"
+                                                                                                                                class=" border rounded btn-view">View</button>
+                                                                                                                </a>
+                                                                                                                <a href=""
+                                                                                                                        class="common_button">
+                                                                                                                        <button type="button"
+                                                                                                                                class=" border rounded btn-success">Accept</button>
+                                                                                                                </a>
+                                                                                                                <a href=""
+                                                                                                                        class="common_button">
+                                                                                                                        <button type="button"
+                                                                                                                                class=" border rounded btn-danger">Declined</button>
+                                                                                                                </a>
+                                                                                                        </div>
+                                                                                                </td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                        </table>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        
+                                <!-- admin Merchants Management -->
+                                <div class="merchants-management py-4 px-4 w-100">
+                                        <div class=" row">
+                                                <div class="py-2 px-2 rounded border">
+                                                        <div class="py-3 px-3 d-flex ">
+                                                                <h5 class="col-md-8 ">Merchants Management</h5>
+                                                                <div class="col-md-4 d-flex gap-3 justify-content-end">
+                                                                        <input type="text" name="" id=""
+                                                                                placeholder="Search"
+                                                                                class="bg-light border p-2 position-relative">
+                                                                        <i class="fas fa-search search-icon  "></i>
+                                                                        <i
+                                                                                class="fas fa-filter p-2 filter-icon text-white"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="px-4 py-4">
+                                                                <div class="table-responsive">
+                                                                        <table class="table table-hover common_table ">
+                                                                                <thead>
+                                                                                        <tr class="text-center">
+                                                                                                <th>S.NO</th>
+                                                                                                <th>IMAGE</th>
+                                                                                                <th>NAME</th>
+                                                                                                <th>EMAIL</th>
+                                                                                                <th>MOBILE NO.</th>
+                                                                                                <th>RESTAURANTS NAME
+                                                                                                </th>
+                                                                                                <th>LOCATIONS</th>
+                                                                                                <th>STATUS</th>
+                                                                                                <th>ACTION</th>
+                                                                                        </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                        <tr class="text-center">
+                                                                                                <td>1</td>
+                                                                                                <td><img src="asstes/img/b.webp"
+                                                                                                                class="User-img"
+                                                                                                                alt="">
+                                                                                                </td>
+                                                                                                <td>shubham</td>
+                                                                                                <td>Harshsaini@gmail.com
+                                                                                                </td>
+                                                                                                <td>76266464454</td>
+                                                                                                <td>HOT RESTAURANTS</td>
+                                                                                                <td>NEW YORK</td>
+                                                                                                <td
+                                                                                                        class="text-success">
+                                                                                                        Active</td>
+                                                                                                <td>
+                                                                                                        <div
+                                                                                                                class="d-flex align-items-center gap-1 justify-content-center">
+                                                                                                                <a href=""
+                                                                                                                        class="common_icon">
+                                                                                                                        <i
+                                                                                                                                class=" fas fa-eye"></i>
+                                                                                                                </a>
+                                                                                                                <a href=""
+                                                                                                                        class="common_icon">
+                                                                                                                        <i
+                                                                                                                                class="fa fa-trash"></i>
+                                                                                                                </a>
+                                                                                                        </div>
+                                                                                                </td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                        </table>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!--  end-->
+                        </div>
+                        
+                        <script>
+                            function new_merchant(){
+                                    var new_merchant_details = document.getElementsByClassName('new-merchant');
+                                    var merchant_manage = document.getElementsByClassName('merchants-management');
+                                    if(new_merchant_details){
+                                            new_merchant_details[0].style.display = 'block';
+                                            merchant_manage[0].style.display = 'none';
+                                    }else{
+                                          
+                                    }
+                            }
+                        
+                            function merchant_management(){
+                                    var merchant_manage = document.getElementsByClassName('merchants-management');
+                                    var new_merchant_details = document.getElementsByClassName('new-merchant');
+                                    if(merchant_manage){
+                                            merchant_manage[0].style.display = 'block';
+                                            new_merchant_details[0].style.display = 'none';
+                                    }else{
+                                            
+                                    }
+                            }
+                        </script>    
+
+                        
+</body>
+
+</html>

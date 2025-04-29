@@ -1,0 +1,124 @@
+/* header and sidebae classes in HeaderSidebar.css */
+
+.user-info-active {
+    position: relative;
+    width: 23%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f2894f;
+    color: white;
+    bottom: 5px;
+
+}
+
+.user-info-active p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.user-info-active h1 {
+    font-weight: 700;
+    justify-content: end;
+    display: flex;
+}
+
+.admin-recent-user {
+    padding-top: 25px;
+    position: relative;
+}
+
+.search-icon {
+    margin-left: -5 5px;
+    margin-top: 11px;
+    font-size: 22px;
+}
+
+.filter-icon {
+    background-color: #f2894f;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.user-list-icon {
+    background-color: #f2894f;
+    padding: 5px;
+    border-radius: 25px;    
+    color: #fff;
+}
+
+.admin-new-merchant {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.rating-review-active {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 31%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #fff;
+    top: 5px;
+    bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.rating-review-active p {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 0 !important;
+}
+
+.rating-review-active h6 {
+    font-weight: 400;
+    display: flex;
+}
+
+.food-img {
+    width: 50px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.food-maker-img {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 35px;
+}
+
+.food-bg {
+    background-color: #f2894f;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.common_table thead th{
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.common_icon{
+    width: 20px;
+ height: 20px;   
+ line-height: 18px;
+ text-align: center;
+ border-radius: 50%;
+ display: block;
+ background-color: #f2894f;
+}
+.common_icon i{
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.common_button{
+    font-size: 15px;
+    margin-bottom: 0;
+}

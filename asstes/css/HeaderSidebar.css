@@ -1,0 +1,69 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #b8b9bb;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: 'Poppins' !important;
+    color: #fff !important;
+}
+
+.header {
+    background-color: #f2894f;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 26px;
+    margin-right: 10px;
+}
+
+.admin-sidebar {
+    width: 20%;
+    background-image: url(/asstes/img/julio.jpg);
+    padding: 10px 10px 10px 0;
+    z-index: 0;
+    position: relative;
+    height: calc(100vh - 58px);
+    overflow: auto;
+    background-size: cover;
+}
+
+.admin-content {
+    width: 80%;
+    overflow: auto;
+    height: calc(100vh - 58px);
+}
+
+.sidebar-active {
+    position: relative;
+}
+
+.sidebar-active a {
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar-active i {
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar-active::after {
+    content: '';
+    position: absolute;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 0;
+    left: 0;
+    height: 46px;
+    width: 236px;
+    background-color: #f2894f;
+}

@@ -1,0 +1,224 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #b8b9bb;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: 'Poppins' !important;
+    color: #fff !important;
+}
+
+.header {
+    background-color: #f2894f;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 26px;
+    margin-right: 10px;
+}
+
+.admin-sidebar {
+    width: 20%;
+    background-image: url(/asstes/img/julio.jpg);
+    padding: 10px 10px 10px 0;
+    z-index: 0;
+    position: relative;
+    height: calc(100vh - 58px);
+    overflow: auto;
+    background-size: cover;
+}
+
+.admin-content {
+    width: 80%;
+    overflow: auto;
+    height: calc(100vh - 58px);
+}
+
+.sidebar-active {
+    position: relative;
+}
+
+.sidebar-active a {
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar-active i {
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar-active::after {
+    content: '';
+    position: absolute;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 0;
+    left: 0;
+    height: 46px;
+    width: 236px;
+    background-color: #f2894f;
+}
+
+.user-info-active {
+    position: relative;
+    width: 23%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f2894f;
+    color: white;
+    bottom: 5px;
+
+}
+
+.user-info-active p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.user-info-active h1 {
+    font-weight: 700;
+    justify-content: end;
+    display: flex;
+}
+
+.admin-users-management {
+    padding-top: 25px;
+    position: relative;
+}
+
+.User-img {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 24px;
+}
+
+.search-icon {
+    margin-left: -5 5px;
+    margin-top: 11px;
+    font-size: 22px;
+}
+
+.filter-icon {
+    background-color: #f2894f;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.user-list-icon {
+    background-color: #f2894f;
+    padding: 5px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.btn-merchant {
+    font-size: 12px;
+    background-color: #f2894f;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.btn-merch-management {
+    font-size: 12px;
+    padding: 12px 15px;
+    background-color: #fff;
+    color: #f2894f;
+    border-radius: 8px;
+    border: 1px solid #f2894f;
+}
+
+.btn-merch-management:hover {
+    font-size: 12px;
+    padding: 12px 15px;
+    background-color: #f2894f;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #f2894f;
+    transition: 0.6s ease-in-out;
+}
+
+.add-btn-merchant {
+    width: 8rem;
+    font-size: 12px;
+    background-color: #f2894f;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+}
+
+.common_table thead th {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.common_table tbody {
+    font-size: 16px !important;
+
+}
+
+.btn-view {
+    background-color: #f2894f;
+    color: #fff;
+}
+
+.common_table tbody tr td {
+    vertical-align: middle;
+    border-color: #E6E6E6;
+    white-space: nowrap;
+    font-size: 14px;
+    transition: 0.3s all;
+    padding: 12px 15px;
+    color: #828282;
+    font-weight: 400;
+}
+
+
+.common_icon{
+    width: 20px;
+ height: 20px;   
+ line-height: 18px;
+ text-align: center;
+ border-radius: 50%;
+ display: block;
+ background-color: #f2894f;
+}
+.common_icon i{
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.common_button{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.user-bio {
+    width: 102px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.leading-1{
+    font-size: 12px;
+}
+
+.new-merchant{
+    display: block;
+}
+.merchants-management{
+    display: none;
+}

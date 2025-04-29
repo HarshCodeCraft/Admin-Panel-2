@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscription Plan</title>
+        <link rel="stylesheet" href="asstes/css/SubscriptionPlan.css">
+        <link rel="stylesheet" href="asstes/css/HeaderSidebar.css">
+        <link rel="stylesheet" href="asstes/css/bootstrap.css">
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+
+</head>
+
+<body>
+        <!--  start-->
+        <div class="main-container">
+                <!-- admin header -->
+                <div class="p-1 header ">
+                        <div class="d-flex flex-wrap justify-content-between w-100">
+                                <h2 class="text-white d-flex">
+                                        <b>Timp</b>
+                                </h2>
+                                <img src="asstes/img/man.jpg" class="rounded-circle profile-img d-flex">
+                        </div>
+                </div>
+                <!--  end-->
+                <!-- start  Admin sidebar  -->
+                <div class="d-flex flex-wrap">
+                        <div class="admin-sidebar">
+                                <div class="d-flex flex-wrap  w-100">
+                                        <ul class=" p-2 align-items-center text-white">
+                                                <li class="d-flex p-1 m-0 align-items-center sidebar-active"><i
+                                                                class="p-2 fas fa-home"></i><a href="index.html"
+                                                                class="p-2">Dashboard</a>
+                                                </li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-users"></i><a
+                                                                href="UserManagement.html" class="p-2">User
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-hotel"></i><a
+                                                                href="MerchantManagement.html" class="p-2">Merchant
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center"><i
+                                                                class="p-2 fas fa-star"></i><a href="RatingReview.html"
+                                                                class="p-2">Rating and
+                                                                Review</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-handshake"></i><a
+                                                                href="DealManagement.html" class="p-2">Deal
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-hand-holding-usd"></i><a href="#"
+                                                                class="p-2">Subscription Plan</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-user"></i><a
+                                                                href="AdvertisementPackage.html"
+                                                                class="p-2">Advertisement
+                                                                Package</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-bullhorn"></i><a
+                                                                href="PromotionalBanner.html" class="p-2">Promotional
+                                                                Banner</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-flag"></i><a
+                                                                href="RedFlagContent.html" class="p-2">Red
+                                                                Flag
+                                                                Content</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-sync-alt"></i><a
+                                                                href="TransactionManagement.html"
+                                                                class="p-2">Transaction
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-tools"></i><a
+                                                                href="MaintenceAndUpdates.html" class="p-2">Maintenance
+                                                                and
+                                                                Update</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-headset"></i><a
+                                                                href="/HelpSupport.html" class="p-2">Help &
+                                                                Support</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-edit"></i><a
+                                                                href="ContentManagement.html" class="p-2">Content
+                                                                Management</a></li>
+                                                <li class="d-flex p-1 m-0 align-items-center "><i
+                                                                class="p-2 fas fa-sign-out-alt"></i><a
+                                                                href="Logout.html" class="p-2">Logout</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <!-- end -->
+
+                        <div class="admin-content py-4 px-4">
+                                <div class="d-flex flex-wrap col-md-12 py-2 px-2 ">
+                                        <div class="col-md-10">
+                                                <!-- <a href="" class="" > -->
+                                                <button class="btn-merchant" onclick="subs_plan()">Subscription
+                                                        Plan</button>
+                                                <!-- </a> -->
+
+                                                <!-- <a href="" class="" > -->
+                                                <button class="btn-merch-management " onclick="user_plan()">
+                                                        Users Subscription Plan</button>
+                                                <!-- </a> -->
+
+                                        </div>
+                                        <div class="col-md-2 border-0 d-flex justify-content-end">
+                                                <a href="" class=""><button class="add-btn-merchant  ">Add
+                                                                Subscription Plan</button></a>
+                                        </div>
+                                </div>
+
+                                <!-- admin subscription plan management -->
+                                <div class="subs-plan-content py-2 px-2 w-100">
+
+                                        <div class="admin-plan-management row">
+                                                <div class="py-2 px-2 rounded border">
+                                                        <div class="py-3 px-3 d-flex ">
+                                                                <h5 class="col-md-8 ">Subscription Plan Management</h5>
+                                                                <div class="col-md-4 d-flex gap-3 justify-content-end">
+                                                                        <input type="text" name="" id=""
+                                                                                placeholder="Search"
+                                                                                class="bg-light border p-2 position-relative">
+                                                                        <a href=""><i
+                                                                                        class="fas fa-search search-icon text-dark"></i></a>
+                                                                        <a href=""><i
+                                                                                        class="fas fa-filter p-2 filter-icon text-white"></i></a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="px-4 py-4">
+                                                                <div class="table-responsive">
+                                                                        <table class="table table-hover common_table ">
+                                                                                <thead>
+                                                                                        <tr class="text-center">
+                                                                                                <th>S.NO</th>
+                                                                                                <th>PlAN NAME</th>
+                                                                                                <th>PRICE</th>
+                                                                                                <th>FEATURE</th>
+                                                                                                <th>DURATION</th>
+                                                                                                <th>ACTION</th>
+                                                                                        </tr>
+                                                                                </thead>
+
+                                                                                <tbody>
+                                                                                        <tr class="text-center">
+                                                                                                <td>1</td>
+                                                                                                <td>RESTAURANT</td>
+                                                                                                <td>AED 20.20</td>
+                                                                                                <td>Lorem ipsum dolor
+                                                                                                        sit amet
+                                                                                                        consectetur.
+                                                                                                </td>
+                                                                                                <td>1 MONTH</td>
+                                                                                                <td>
+                                                                                                        <div
+                                                                                                                class="d-flex align-items-center gap-1 justify-content-center">
+                                                                                                                <a href=""
+                                                                                                                        class="common_icon">
+                                                                                                                        <i
+                                                                                                                                class=" fas fa-eye"></i>
+                                                                                                                </a>
+                                                                                                                <a href=""
+                                                                                                                        class="common_icon">
+                                                                                                                        <i
+                                                                                                                                class="fa fa-trash"></i>
+                                                                                                                </a>
+                                                                                                        </div>
+                                                                                                </td>
+                                                                                        </tr>
+                                                                                </tbody>
+
+                                                                        </table>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                </div>
+                                <div class="user-plan-content py-2 px-2 w-100">
+
+                                        <div class="user-plan-management row">
+                                                <div class="py-2 px-2 rounded border">
+                                                        <div class="py-3 px-3 d-flex ">
+                                                                <h5 class="col-md-5 ">User Subscription Plan</h5>
+                                                                <div class="col-md-7 d-flex gap-3 justify-content-end">
+                                                                        <button type="" class="btn-primary ">Enable
+                                                                                subscription Plan</button>
+                                                                        <input type="text" name="" id=""
+                                                                                placeholder="Search"
+                                                                                class="bg-light border p-2 position-relative">
+                                                                        <i class="fas fa-search search-icon  "></i>
+                                                                        <i
+                                                                                class="fas fa-filter p-2 filter-icon text-white"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="px-4 py-4">
+                                                                <div class="table-responsive">
+                                                                        <table class="table table-hover common_table ">
+                                                                                <thead>
+                                                                                        <tr class="text-center">
+                                                                                                <th>S.NO</th>
+                                                                                                <th>USERS</th>
+                                                                                                <th>USER NAME</th>
+                                                                                                <th>USER PLAN</th>
+                                                                                                <th>PLANS START DATE
+                                                                                                </th>
+                                                                                                <th>PLAN END DATE</th>
+                                                                                                <th>ACTION</th>
+                                                                                        </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                        <tr class="text-center">
+                                                                                                <td>1</td>
+                                                                                                <td><img src="asstes/img/b.webp"
+                                                                                                                class="User-img"
+                                                                                                                alt="">
+                                                                                                </td>
+                                                                                                <td>shubham</td>
+                                                                                                <td>Platinum Plan</td>
+                                                                                                <td>02-02-2024</td>
+                                                                                                <td>02-03-2024</td>
+                                                                                                <td>
+                                                                                                        <div
+                                                                                                                class="d-flex align-items-center gap-1 justify-content-center">
+                                                                                                                <a href=""
+                                                                                                                        class="common_icon">
+                                                                                                                        <i
+                                                                                                                                class=" fas fa-eye"></i>
+                                                                                                                </a>
+                                                                                                                <a href=""
+                                                                                                                        class="common_icon">
+                                                                                                                        <i
+                                                                                                                                class="fa fa-trash"></i>
+                                                                                                                </a>
+                                                                                                        </div>
+                                                                                                </td>
+                                                                                        </tr>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                </div>
+
+                                <!--  end-->
+                        </div>
+
+                </div>
+
+                <script>
+                        function subs_plan(){
+                                var subscription_plan = document.getElementsByClassName("subs-plan-content");
+                                var user_subs_plan = document.getElementsByClassName("user-plan-content");
+                                if(subscription_plan){
+                                        subscription_plan[0].style.display = "block";
+                                        user_subs_plan[0].style.display = "none";
+                                }
+                        }
+
+                        function user_plan(){
+                                var user_subs_plan = document.getElementsByClassName("user-plan-content");
+                                var subscription_plan = document.getElementsByClassName("subs-plan-content");
+                                if(user_subs_plan){
+                                        subscription_plan[0].style.display = "none";
+                                        user_subs_plan[0].style.display = "block";
+                                }
+                        }
+                </script>
+</body>
+
+</html>
