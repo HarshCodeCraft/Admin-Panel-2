@@ -27,7 +27,7 @@ a {
 
 .admin-sidebar {
     width: 20%;
-    background-image: url('asstes/img/julio.jpg');
+    background-image: url(asstes/img/julio.jpg);
     padding: 10px 10px 10px 0;
     z-index: 0;
     position: relative;
